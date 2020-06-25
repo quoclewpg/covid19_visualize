@@ -3,6 +3,9 @@ h1{
 	font-size: 25px;
 	margin-top: 10px;
 }
+p{
+	text-align: center;
+}
 
 body{
  	background-color: lightblue;
