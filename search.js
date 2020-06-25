@@ -2,7 +2,7 @@ function search(){
 	var inputSearch, data, filterSearch, table, th, tr, td;
 
 	inputSearch = document.getElementById("search");
-	filterSearch = inputSearch.value.trim().replace(/,/g, "").toUpperCase();
+	filterSearch = inputSearch.value.replace(/[, ]+/g, " ").trim().toUpperCase();
 	table = document.getElementById("table");
 	tr = table.getElementsByTagName("tr");
 	th = document.getElementsByTagName("th");
@@ -18,7 +18,7 @@ function search(){
 				if(td.innerText.match(/[a-z]/g))
 				{
 					data += td.innerText;
-					if(data.trim().replace(/,/g, "").toUpperCase().indexOf(filterSearch) > -1)
+					if(data.replace(/[, ]+/g, " ").trim().toUpperCase().indexOf(filterSearch) > -1)
 					{
 						tr[i].style.display = "";
 					}
@@ -27,8 +27,8 @@ function search(){
 						tr[i].style.display = "none";
 					}
 				}
-				data = "";
 			}
 		}
+		data = "";
  	}
 }
