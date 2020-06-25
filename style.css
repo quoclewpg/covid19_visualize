@@ -30,6 +30,7 @@ body{
 	margin-left: 5px;
 	padding: 12px 20px 12px 40px;
 	border: 1px solid;
+	justify-content: center;
 }
 
 .container{
@@ -49,5 +50,3 @@ body{
     width:100%;
   }
 }
-
-.hidden { display:none; }

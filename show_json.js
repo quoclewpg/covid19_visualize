@@ -11,7 +11,7 @@ window.onload = function loadServers(){
 			
 			for(var i = 0; i < data.length; i++)
 			{
-				table += "<tr><td>" + data[i].id + "</td><td>"
+				table += "<tr><td>" + data[i].id + "</td><td id='dates'>"
 					  + data[i].date + "</td><td>"
 					  + data[i].cases + "</td></tr>";
 			  	total +=data[i].cases;

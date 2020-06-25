@@ -12,6 +12,9 @@
 	<body>
  		<h1>Covid19 - Daily Reported Cases In Manitoba</h1>
  		<p id="total">Total Cases: </p>
+ 		<div id="buttons">
+ 			<input type="text" id="search" onkeyup="search()" placeholder="Search a date...">
+ 		</div>
 		<div class="container">
 			<table id ="table" class="table table-light-dark table-striped">
 				<thead>
@@ -28,5 +31,6 @@
 			<p>Copyright 2020 by Quoc Le.</p>
 		</div>
 		<script src="show_json.js"></script>
+		<script src="search.js"></script>
 	</body>
 </html>
