@@ -11,7 +11,7 @@ window.onload = function loadServers(){
 			var day = 10;
 			var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 			var d;
-			var timestamp = data[data.length - 1].timestamp;
+			var timestamp = data[data.length - 1].date;
 
 			for(var i = 0; i < data.length; i++)
 			{
@@ -25,7 +25,7 @@ window.onload = function loadServers(){
 				day++;	
 			}
 			document.getElementById("total").insertAdjacentHTML("beforeend",total);	
-			document.getElementById("update").insertAdjacentHTML("beforeend",timestamp.substring(0, 16));	
+			document.getElementById("update").insertAdjacentHTML("beforeend",timestamp + " 4:30 p.m.");	
 		}
 	}
 	xHttp.send();
